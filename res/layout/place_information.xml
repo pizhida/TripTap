@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Place Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/pi_image"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/pi_name"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phuket3" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/pi_image"
+       
+        android:background="#CC00BFA5" >
+
+        <TextView
+            android:id="@+id/pi_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/pi_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pi_location"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+         android:layout_marginRight="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pi_image"
+        android:background="#CC00BFA5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/for_lo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+  
+    <ListView
+        android:id="@+id/commentlist"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pi_location"
+         >
+
+    </ListView>
+    
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/pi_location"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pi_image"
+        android:background="#CC00E5FF"
+        android:orientation="vertical" >
+        
+         <ImageView
+        android:id="@+id/map_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phuket1" />
+
+
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

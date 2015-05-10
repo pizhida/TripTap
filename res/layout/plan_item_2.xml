@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/preview1"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+		android:scaleType="centerCrop"
+        android:src="@drawable/phuket1" />
+
+    <ImageView
+        android:id="@+id/preview2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/preview1"
+        android:layout_weight="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phuket2" />
+
+    <ImageView
+        android:id="@+id/preview3"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/preview1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phuket3" />
+
+    <TextView
+        android:id="@+id/planname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/preview3"
+        android:text="3 Places"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/preview3"
+        android:text="Rate = 9"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

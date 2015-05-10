@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources> 
+   <string name="app_name">TripsTap</string>      
+  <string name="action_settings">Settings</string>     
+ <string name="hello_world">Hello world!</string> 
+ <string name="imgdesc">imgdesc</string> 
+ <string name="app_id">1191723097510760</string>
+
+ <string-array name="titles">          
+   <item>Trip-Me</item> 
+   <item>Trip-For-You</item>         
+  <item>Hotel</item>
+  <item>Restaurant</item>
+  <item>Tap-Maps</item> 
+  <item>Trip-Info</item>
+ </string-array> 
+<array name="icons"> 
+ <item>@drawable/tripme</item> 
+<item>@drawable/tripforyou</item> 
+<item>@drawable/hotel</item> 
+<item>@drawable/restaurant</item> 
+<item>@drawable/maps</item> 
+<item>@drawable/info</item> 
+  </array>  
+</resources>
